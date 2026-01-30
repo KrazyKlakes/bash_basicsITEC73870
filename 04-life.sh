@@ -15,11 +15,12 @@ fi
 # exercise: write a script that prints whether it is 
 # morning or not
 
-echo "Is it morning? (yes/no)"
-read answer
+echo "What hour is it? (0-23)"
+read hour
 
-if [ "$answer" = "yes" ]; then
+if [ "$hour" -lt 12 ]; then
    echo "Good morning!"
 else
-   echo "It is not morning then"
+   echo "It is not morning"
+
 fi
