@@ -1,7 +1,7 @@
+#!/bin/bash
 
 echo "What is the meaning of life?"
 read meaning
-
 
 if [ "$meaning" -eq 42 ]; then
    echo "Yes!, That is the meaning of life!"
@@ -14,3 +14,12 @@ fi
 
 # exercise: write a script that prints whether it is 
 # morning or not
+
+echo "Is it morning? (yes/no)"
+read answer
+
+if [ "$answer" = "yes" ]; then
+   echo "Good morning!"
+else
+   echo "It is not morning then"
+fi
